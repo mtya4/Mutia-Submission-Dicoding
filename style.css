@@ -1,0 +1,249 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+header.nav-container {
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999px;
+  background-color: rgb(204, 13, 163);
+}
+
+header.nav-container .logo img {
+  width: 60px;
+  float: left;
+}
+
+header.nav-container .logo h4 {
+  color: white;
+  position: absolute;
+  left: 70px;
+}
+
+header.nav-container .list-nav ul {
+  padding-left: 0;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 2rem;
+}
+
+header.nav-container .list-nav li {
+  list-style-type: none;
+}
+
+header.nav-container .list-nav li a {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 480;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+header.nav-container .list-nav li:hover a {
+  background-color: rgb(237, 147, 217);
+  color: white;
+}
+
+main .jumbotron {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: rgb(237, 147, 217);
+}
+
+main .jumbotron .text-jumbotron {
+  flex: 1 1;
+  color: white;
+}
+
+main .jumbotron .text-jumbotron .tittle {
+  margin-left: 35px;
+  font-size: 55px;
+}
+
+main .jumbotron .text-jumbotron p {
+  margin-left: 35px;
+  font-size: 19px;
+  text-align: justify;
+}
+
+main .jumbotron .img-jumbotron {
+  flex: 1;
+  display: flex;
+}
+
+main .jumbotron .img-jumbotron img {
+  width: 50%;
+  margin: auto;
+}
+
+main .jumbotron .text-jumbotron button {
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-color: rgb(204, 13, 163);
+  margin-left: 35px;
+  margin-bottom: 15px;
+}
+
+main .jumbotron .text-jumbotron button:hover {
+  border: 2px solid white;
+  background-color: rgba(175, 2, 138, 0.432);
+}
+
+main .jumbotron .text-jumbotron button a {
+  text-decoration: none;
+  color: white;
+}
+
+.judul {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(204, 13, 163);
+  color: white;
+  margin-top: 8px;
+}
+
+.Menu {
+  height:500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color:rgb(204, 13, 163);
+}
+
+.Menu h3, p {
+  margin-left: 10px;
+}
+
+.Menu button {
+  margin-left: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+.Menu .card {
+  width: 30%;
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, .2);
+  border-radius: 8px;
+  color: white;
+  background-color:rgb(237, 147, 217);
+}
+
+.card img {
+  width: 90%;
+  max-height: 250px;
+  margin-left: 5%;
+  border-radius: 6px;
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
+
+#profile .card {
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, .2);
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(237, 147, 217);
+}
+
+.profil h1 {
+  text-align: center;
+}
+
+.profil h3{
+  text-align: center;
+}
+
+.profil table {
+  text-align: left;
+}
+
+.contact {
+  width: 70%;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.sosmed {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sosmed img {
+  width: 50%;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 8px;
+  background-color: rgb(204, 13, 163);
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  header.nav-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  header.nav-container .list-nav {
+    width: 100%;
+  }
+
+  header.nav-container .list-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding-left: 120px;
+  }
+
+  main .jumbotron .text-jumbotron, main .jumbotron .img-jumbotron {
+    flex: 100%;
+    text-align: center;
+  }
+
+  main .jumbotron .img-jumbotron img {
+    width: 80%;
+  }
+
+  .Menu {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #profile .card, .Menu .card {
+    width: 90%;
+    margin-top: 8px;
+  }
+
+  #profile .card {
+    background-color: rgb(204, 13, 163);
+  }
+
+  #profile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 147, 217);
+  }
+
+  .sosmed {
+    display: flex;
+    flex-direction: column;
+  }
+}
